@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
+
+import { withSuspense } from "./hoc/withSuspense";
+import MainPage from "./pages/main";
+import CardPage from "./pages/card";
+import NotFoundPage from "./pages/notfound";
+
+const App = () => {
+    return (
+        <Routes>
+            <Route path="/">
+                <Route index element={withSuspense(<MainPage />)} />
+                <Route path="hero/:id" element={withSuspense(<CardPage />)} />
+                <Route path="notfound" element={withSuspense(<NotFoundPage />)} />
+                <Route path="*" element={<Navigate to={"/notfound"} replace />} />
+            </Route>
+        </Routes>
+    );
+};
 
 export default App;

@@ -1,0 +1,69 @@
+.card{
+    width: 100%;
+    padding: 6rem 0;
+}
+
+.cardInner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardInfo{
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cardInfoTitle{
+    font-size: 3.2rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.cardInfoEdit{
+    padding: 1.2rem 2.6rem;
+    background: #007cee;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 1.6rem auto 0 auto;
+    min-width: 200px;
+}
+
+@media (any-hover: hover) {
+    .cardInfoEdit:hover{
+        background: #0170d8;
+    }
+}
+
+.cardInfoText{
+    width: 100%;
+    min-height: 32px;
+    border-radius: 4px;
+    background: #2f2f2f;
+    padding: 0.4rem 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.cardInfoSuptitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.cardInfoPoints{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}

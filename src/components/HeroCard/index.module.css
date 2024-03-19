@@ -1,0 +1,88 @@
+.cardItem{
+    width: calc(100% / 4 - 72px / 4);
+    border-radius: 8px;
+    background: #2f2f2f;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cardItemPoints{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.cardItemPoint{
+    font-size: 1.4rem;
+}
+
+.cardItemPoint:first-child{
+    color: #a1a1a1;
+    font-weight: 500;
+}
+
+.cardItemPoint:last-child{
+    font-weight: 600;
+}
+
+.cardItemPointCircle{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.cardItemWrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardItemMale{
+    font-size: 1.4rem;
+    color: #b8b8b8;
+    opacity: 0.5;
+    transition: .2s linear;
+}
+
+.cardItemMale.active{
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.cardItemName{
+    width: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.cardItemMore{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 2rem;
+    border-radius: 4px;
+    background: #007cee;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+}
+
+@media (any-hover: hover) {
+    .cardItemMore:hover{
+        background: #026bcd;
+    }
+
+    .cardItem:hover{
+        background: #474747;
+    }
+}

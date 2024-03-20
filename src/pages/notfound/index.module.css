@@ -1,0 +1,11 @@
+.notfound{
+    width: 100%;
+    padding: 6rem 0;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+
+.notfoundInner{
+    width: 100%;
+}

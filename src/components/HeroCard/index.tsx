@@ -27,7 +27,7 @@ const HeroCard: React.FC<Props> = ({
 }) => {
     const { name, birth_year, gender, eye_color, hair_color, height, mass, skin_color, url } = data || {};
 
-    const id = url.split("people/")[1][0]; // API не предоставляет id объекта, поэтому приходится выкручиваться
+    const id = url.split("people/")[1]; // API не предоставляет id объекта, поэтому приходится выкручиваться
 
     return (
         <Link to={`/hero/${id}`} className={styles.cardItem}>

@@ -66,7 +66,7 @@ const MainPage = () => {
                     )}
 
                     <div className={styles.mainContent}>
-                        {isLoading || !heroList?.count ? (
+                        {isLoading || (!heroList?.count && heroList?.count !== 0) ? (
                             <Preloader page small />
                         ) : isError ? (
                             <NotContent
